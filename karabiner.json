@@ -36,9 +36,8 @@
                             }
                         ]
                     },
-
                     {
-                        "description": "Caps Lock + U/O to PgUp, PgDn",
+                        "description": "Caps Lock + U/O to Home, End",
                         "manipulators": [
                             {
                                 "from": {
@@ -54,7 +53,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "page_up"
+                                        "key_code": "home"
                                     }
                                 ],
                                 "type": "basic"
@@ -73,6 +72,49 @@
                                 },
                                 "to": [
                                     {
+                                        "key_code": "end"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Caps Lock + D/F to PgUp, PgDn",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_up"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
                                         "key_code": "page_down"
                                     }
                                 ],
@@ -80,7 +122,6 @@
                             }
                         ]
                     },
-
                     {
                         "description": "Fn + I/J/K/L to Arrow Keys",
                         "manipulators": [
@@ -180,6 +221,30 @@
                                 "to": [
                                     {
                                         "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + ; to Enter",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter"
                                     }
                                 ],
                                 "type": "basic"
